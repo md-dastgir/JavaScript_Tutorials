@@ -5,6 +5,7 @@
     3. switch
 */
 
+
 // if-else
 
 let n = 20;
