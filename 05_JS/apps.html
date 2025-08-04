@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic - Register Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="apps.css">
+</head>
+<body>
+    <div id="container">
+        <div id="card" class="animate__animated animate__fadeInDown animate__faster">
+            <h1>Register Now</h1>
+            <form id="signup" autocomplete="off" onsubmit="signup(event)" name="register">
+                <input type="text" name="firstname" placeholder="firstname" required="true">
+                <input type="text" name="lastname" placeholder="lastname" required="true">
+                <input type="email" name="email" placeholder="example@mail.com" required="true">
+                <input type="password" name="password" placeholder="**********" required="true">
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="apps.js"></script>
+</body>
+</html>
