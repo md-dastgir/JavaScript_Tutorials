@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic - Register Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="container">
+        <div id="card" class="animate__animated animate__fadeInDown animate__faster">
+            <h1>Register Now</h1>
+            <form id="signup" autocomplete="off" onsubmit="signup(event)" name="register">
+                <input type="text" name="firstname" placeholder="firstname" required="true">
+                <input type="text" name="lastname" placeholder="lastname" required="true">
+                <input type="email" name="email" placeholder="example@mail.com" required="true">
+                <input type="password" name="password" placeholder="**********" required="true">
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="model">
+        <div id="model-body">
+            <button id="close-btn" onclick="closeModel()">
+                <i class="fa fa-circle-xmark"></i>
+            </button>
+            <i class="fa fa-circle-check" id="check"></i>
+            <h1>Register Succesful !</h1>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
