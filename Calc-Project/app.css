@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    background: #ddd;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    width: 300px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: -5px 5px 2px 0 gray;
+}
+#title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#result{
+    height: 40px;
+    width: 280px;
+}
+#btn{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+#cal-btn{
+    padding: 18px 22px;
+    width: calc(25% - 15px);
+    cursor: pointer;
+    background: #323232;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+#cal-btn:hover{
+    background: red;
+    transition: 0.8;
+}
+#para{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}

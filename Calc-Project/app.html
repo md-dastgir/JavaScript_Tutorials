@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="container">
+        <div id="card">
+            <h1 id="title">Calculator</h1>
+            <p id="para">Test</p>
+            <input id="result" placeholder="calculate somethings">
+            <div id="btn">
+                <button id="cal-btn" onclick="input(7)">7</button>
+                <button id="cal-btn" onclick="input(8)">8</button>
+                <button id="cal-btn" onclick="input(9)">9</button>
+                <button id="cal-btn" onclick="input('*')">*</button>
+                
+                <button id="cal-btn" onclick="input(4)">4</button>
+                <button id="cal-btn" onclick="input(5)">5</button>
+                <button id="cal-btn" onclick="input(6)">6</button>
+                <button id="cal-btn" onclick="input('-')">-</button>
+
+                <button id="cal-btn" onclick="input(1)">1</button>
+                <button id="cal-btn" onclick="input(2)">2</button>
+                <button id="cal-btn" onclick="input(3)">3</button>
+                <button id="cal-btn" onclick="input('+')">+</button>
+
+                <button id="cal-btn" onclick="input(0)">0</button>
+                <button id="cal-btn" onclick="input('.')">.</button>
+                <button id="cal-btn" onclick="cancel()">C</button>
+                <button id="cal-btn" onclick="calc()">=</button>
+
+                <button id="cal-btn" onclick="even()" style="width: 45%;">Even</button>
+                <button id="cal-btn" onclick="odd()" style="width: 45%;">Odd</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
