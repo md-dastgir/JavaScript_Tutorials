@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.mode{
+    padding: 20px;
+    border-style: none;
+    box-shadow: 0 3px 2px 0 #ddd;
+    cursor: pointer;
+}
