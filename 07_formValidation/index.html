@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="sidebar">
+            <button onclick="tab('btn1','btn2','card', 'card2')" id="btn1">SignUp</button>
+            <button onclick="tab('btn2','btn1','card2', 'card')" id="btn2">LogIn</button>
+        </div>
+        <div id="navbar">
+            <h1>MD</h1>
+            <button onclick="modeChange()" class="toggle">
+                <h1 id="mode">Dark</h1>
+            </button>
+            <button onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="section">
+            <div id="card">
+                <h1>Register Now</h1>
+                <form onsubmit="signUp(event)" name="signUpForm" autocomplete="off">
+                    <input type="text" name="fullname" placeholder="Fullname" oninput="onInputValidation(this)">
+                    <p id="nameReq"></p>
+                    <input type="email" name="email" placeholder="example@gmail.com" oninput="onInputValidation(this)">
+                    <p id="emailReq"></p>
+                    <div id="password-container">
+                        <input id="signUp-passwordView" type="password" name="password" placeholder="*********" oninput="onInputValidation(this)">
+                        <button type="button" onclick="togglePassword('signUp-passwordView','view')">
+                            <i class="fa fa-eye" id="view"></i>
+                        </button>
+                    </div>
+                    <p id="passReq"></p>
+                    <button type="submit">SignUp</button>
+                </form>
+            </div>
+
+            <div id="card2">
+                <h1>LogIn</h1>
+                <form name="logInForm" onsubmit="login(event)">
+                    <input id="email" type="email" name="email" placeholder="email" oninput="onInputValidation(this, 'login-emailReq')">
+                    <p id="login-emailReq"></p>
+                    <div id="password-container">
+                        <input id="password" type="password" name="password" placeholder="***" oninput="onInputValidation(this)">
+                        <button type="button" onclick="togglePassword('logIn-passwordView','view2')">
+                            <i class="fa fa-eye" id="view2"></i>
+                        </button>
+                    </div>
+                    <p id="login-passReq"></p>
+                    <button type="submit">LogIn</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>

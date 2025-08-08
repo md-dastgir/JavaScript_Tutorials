@@ -1,0 +1,176 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    height: 100vh;
+}
+
+#sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#sidebar button{
+    padding: 12px 50px;
+    border-style: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#sidebar button:first-child{
+    background: dodgerblue;
+    color: white;
+    margin-top: 12px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+#sidebar button:last-child{
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+#navbar{
+    margin-top: 0;
+    height: 60px;
+    width: calc(100% - 250px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+#navbar button{
+    margin-right: 15px;
+    cursor: pointer;
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border-style: none;
+}
+#navbar h1{
+    margin-left: 15px;
+    color: white;
+    font-family: sans-serif;
+}
+#navbar .toggle{
+    width: 70px;
+    border-style: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar .toggle h1{
+    font-size: 22px;
+    color: #323232;
+    font-family: sans-serif;
+    margin-left: 0;
+}
+
+#section{
+    height: 100vh;
+    width: calc(100% - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section #card{
+    width: 350px;
+    padding: 25px;
+    background: rgb(203, 206, 209);
+    box-shadow: -5px 5px 10px 0 #434343;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: block;
+}
+#section #card h1{
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding-bottom: 20px;
+}
+#section #card form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#section #card form input{
+    padding: 12px;
+    border-style: none;
+}
+#section #card form input:focus{
+    outline-color: dodgerblue;
+}
+#password-container{
+    position: relative;
+}
+#password-container input{
+    width: 93%;
+    border-style: none;
+}
+#password-container button{
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+#nameReq, #emailReq, #passReq, #login-emailReq, #login-passReq{
+    display: none;
+    font-family: sans-serif;
+    color: red;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+#section #card form button[type="submit"]{
+    padding: 12px 40px;
+    width: fit-content;
+    background: dodgerblue;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+#section #card2{
+    width: 350px;
+    padding: 25px;
+    background: rgb(203, 206, 209);
+    box-shadow: -5px 5px 10px 0 #434343;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: none;
+}
+#section #card2 h1{
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding-bottom: 20px;
+}
+#section #card2 form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#section #card2 form input{
+    padding: 12px;
+    border-style: none;
+}
+#section #card2 form button[type="submit"] {
+    padding: 12px 40px;
+    width: fit-content;
+    background: dodgerblue;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
