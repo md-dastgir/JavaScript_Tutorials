@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div id="container">
+        <div id="section">
+            <h1 id="heading">Animate.css</h1>
+            <h2 id="subHead">Just-add-water CSS animations</h2>
+        </div>
+        <div id="sidenav">
+            <button onclick="darkMode()" id="modeBtn">Dark Mode</button>
+            <h3>Attention seekers</h3>
+            <div id="animeBtn">
+                <button onclick="animator('animate__animated animate__bounce')">bounce</button>
+                <button onclick="animator('animate__animated animate__flash')">flash</button>
+                <button onclick="animator('animate__animated animate__pulse')">pulse</button>
+                <button onclick="animator('animate__animated animate__rubberBand')">rubberBand</button>
+                <button onclick="animator('animate__animated animate__shakeX')">shakeX</button>
+                <button onclick="animator('animate__animated animate__shakeY')">shakeY</button>
+                <button onclick="animator('animate__animated animate__headShake')">headShake</button>
+                <button onclick="animator('animate__animated animate__swing')">swing</button>
+                <button onclick="animator('animate__animated animate__tada')">tada</button>
+                <button onclick="animator('animate__animated animate__wobble')">wobble</button>
+                <button onclick="animator('animate__animated animate__jello')">jello</button>
+                <button onclick="animator('animate__animated animate__heartBeat')">heartBeat</button>
+            </div>
+
+            <h3>Back entrances</h3>
+            <div id="animeBtn">
+                <button onclick="animator('animate__animated animate__backInDown')">backInDown</button>
+                <button onclick="animator('animate__animated animate__backInLeft')">backInLeft</button>
+                <button onclick="animator('animate__animated animate__backInRight')">backInRight</button>
+                <button onclick="animator('animate__animated animate__backInUp')">backInUp</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
